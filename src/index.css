@@ -1,0 +1,100 @@
+:root {
+  margin: 0 auto;
+  text-align: center;
+}
+  
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #b3d9ff, #ffffff); /* Soft sky gradient */
+  font-family: 'Inter', sans-serif;
+}
+
+.weather-card {
+  border-radius: 30px;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  min-height: 500px;
+  background: white;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.weather-card.clear { background: linear-gradient(to bottom, #fff, #ffd166); }
+.weather-card.clouds { background: linear-gradient(to bottom, #fff, #ced4da); }
+.weather-card.rain { background: linear-gradient(to bottom, #fff, #a2d2ff); }
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Logic: Creates a small space between icon and text */
+  margin-bottom: 20px;
+}
+
+.app-logo {
+  color: #ffb703; /* Logic: A warm sun-yellow color */
+  font-size: 1.8rem;
+  /* Optional: Add a soft glow like the reference image */
+  filter: drop-shadow(0 0 5px rgba(255, 183, 3, 0.4));
+}
+
+.error-popup {
+  background-color: rgb(250, 2, 2);
+  color: white;
+  border-radius: 50px;
+  padding: 0.1em;
+}
+.weather-details-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.main-info {
+  display: flex;
+  flex-direction: column;
+}
+.main-info img {
+  width: 100px; 
+  height: 100px;
+}
+.temp-display h1 {
+  font-size: 4rem; /* Logic: Makes temperature the hero of the UI */
+  margin: 0;
+}
+
+.stats {
+  text-align: left; /* Logic: Keeps labels aligned like a list */
+}
+.search-div {
+   display: flex;
+   align-items: center;
+   background-color: #f0f5ff;
+   border-radius: 50px;
+   padding: 5px 10px;
+   border: 1px solid #e0e0e0;
+}
+.search-div input {
+  flex-grow: 1;
+  border: none;
+  background: transparent !important;
+  padding-left: 15px;
+}
+.search-div button {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-div input:focus, button:focus, button:active, button:hover {
+  outline: none;
+  border: none
+}
