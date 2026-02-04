@@ -1,16 +1,50 @@
-# React + Vite
+ 🌤️ Modern Weather App - React.js
+A sleek, responsive Weather Application built with React.js that provides real-time weather data with a focus on clean UI/UX and dynamic styling.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+Real-time Data Fetching: Utilizes the OpenWeatherMap API to get live weather updates for any city globally.
 
-Currently, two official plugins are available:
+Initial Load Logic: Automatically displays weather for a default city (Rewa) on startup using the useEffect hook.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Dynamic Theming: The application background and card style change dynamically based on the current weather condition (e.g., Clear, Clouds, Rain, Haze).
 
-## React Compiler
+User-Centric Search: Supports city searches via button clicks or the "Enter" key for seamless navigation.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+State Persistence: Gracefully handles errors (like invalid city names) while keeping the previously searched data visible.
 
-## Expanding the ESLint configuration
+Comprehensive Stats: Displays Temperature, "Feels Like" temperature, Humidity, Wind Speed, and a "Last Updated" timestamp.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tech Stack
+Frontend: React.js (Hooks: useState, useEffect)
+
+Styling: Modern CSS (Flexbox, Glassmorphism, CSS Variables)
+
+Icons: Font Awesome
+
+API: OpenWeatherMap API
+
+📸 Final Look
+ <img width="1913" height="929" alt="Screenshot 2026-02-04 112347" src="https://github.com/user-attachments/assets/7ac6c1ec-7f47-4322-94f1-bda6ea61ff50" />
+
+
+⚙️ Installation & Setup
+Clone the repository:
+
+Bash
+git clone https://github.com/your-username/weather-app-react.git
+Install dependencies:
+
+Bash
+npm install
+Run the app:
+
+Bash
+npm run dev
+🧠 What I Learned
+As a recent Computer Science graduate, this project helped me strengthen several key concepts:
+
+Asynchronous JavaScript: Managing API calls with async/await and handling various HTTP response codes.
+
+Conditional Rendering: Using React logic to show/hide loading spinners and error messages.
+
+UI/UX Design: Implementing "Glassmorphism" and ensuring a clear visual hierarchy for primary data.
